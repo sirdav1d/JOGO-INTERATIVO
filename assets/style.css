@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: pop, sans-serif;
+}
+
+@font-face {
+    font-family: pop;
+    src: url(./font/Poppins-Regular.ttf);
+}
+
+body{
+    padding: 4vmax;
+    background-color: #202020;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    
+}
+
+header img{
+    height: 45px;
+    padding: 0 1vmax;
+}
+
+.headerContent{
+    
+    background-image: url(./img/background.png);
+    background-size: contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
+
+.game-board{
+    width: 750px;
+    height: 450px;
+    margin: 3vmax auto 0 auto;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.096);
+    overflow: hidden;
+    z-index: 2;
+    background-image: url(./img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media screen and (max-width:1020px){
+    .game-board {
+            width: auto;
+            height: 60vh;
+     
+        }
+}
+
+@media screen and (max-width:720px) {
+    .game-board {
+        width: auto;
+        height: 70vh;
+    }
+}
+
+.rock{
+    position: absolute;
+    width: 7vmax;
+    bottom: 0;
+    animation:rock-animation 1.5s infinite linear;
+    z-index: 3;
+}
+
+@media screen and (max-width:720px) {
+    .rock {
+            width: 5vmax;
+    }
+}
+@keyframes rock-animation {
+    from{
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+.aerin{
+    position: absolute;
+    width: 14vmax;
+    bottom: 60px;
+    object-fit: cover;
+    z-index: 1;
+    bottom: -20px;
+}
+
+.jump{
+    animation: jump 700ms  ease-out;
+}
+
+@keyframes jump {
+    0%{
+        bottom: -20px;
+    }
+    40%{
+        bottom: 8vmax;
+    }
+    50%{
+        bottom: 8vmax;
+    }
+    60%{
+        bottom: 8vmax;
+    }
+    100%{
+        bottom: -20px;
+    }
+}
+
+
+.cloud{
+    position: absolute;
+    width: 12vmax;
+    margin-top: 40px;
+    animation: cloud-animation 20s infinite linear;
+}
+
+@keyframes cloud-animation {
+    from {
+        right: -130px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+.restart{
+    position: absolute;
+    width: 40px;
+    padding: 10px;
+    filter: drop-shadow(2px 2px 2px #202020);
+    transition: all .4s ease;
+}
+
+.restart:hover{
+    filter: drop-shadow(2px 2px 2px #fff);
+}
+
+footer{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7vh;
+    color: #fff;
+    bottom: 0;
+    height: 5vh;
+}
+
+.footerContent{
+    display: flex;
+    padding-top: 1vmax;
+}
+
+.footerContent img{
+    padding: 0 1vmax;
+    height: 30px;
+ 
+}
