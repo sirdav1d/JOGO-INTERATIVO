@@ -19,13 +19,14 @@ body{
 header{
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #fff;
+    width: 100%;
     
 }
 
 header img{
-    height: 45px;
-    padding: 0 1vmax;
+    height: 40px;
 }
 
 .headerContent{
