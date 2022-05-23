@@ -36,6 +36,7 @@ header img{
     -webkit-background-clip: text;
     color: transparent;
     font-weight: 900;
+    text-align: center;
 }
 
 .game-board{
