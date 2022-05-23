@@ -8,3 +8,6 @@ Meu objeitivo principal era copiar o modo de jogo simples do navegador Google Ch
 Esse projeto irá integar meu portfólio que está sendo feito nesse momento, utilizando #REACTJS!
 
 
+<div>
+    <img src="./assets\img\aerin-run.gif">
+</div>
